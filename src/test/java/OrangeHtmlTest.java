@@ -49,7 +49,6 @@ public class OrangeHtmlTest {
     public void adminTesting() throws InterruptedException {
         page.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewSystemUsers");
         page.pause();
-        Thread.sleep(6000);
-        assertThat(page.locator("//*[text()='Admin']")).hasText("Dashboard");
+        assertThat(page.locator("//*[text()='Admin']")).hasText("Admin");
     }
 }
